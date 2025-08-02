@@ -1,0 +1,100 @@
+:root {
+  --primary: #4e54c8;
+  --accent: #8f94fb;
+  --bg: #f9fafe;
+  --card-bg: #ffffff;
+  --text: #333;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+.dashboard {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-left: 4px solid var(--primary);
+  padding-left: 0.5rem;
+  color: #222;
+}
+
+form {
+  background: var(--bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 1px #ddd;
+}
+
+input, textarea, button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: var(--accent);
+  cursor: pointer;
+}
+
+.event-card {
+  background: var(--bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.event-card h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.event-card p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+input[type="hidden"] {
+  display: none;
+}

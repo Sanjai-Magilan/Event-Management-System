@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Student Dashboard</h1>
+
+    <section class="section">
+      <h2>Available Events</h2>
+
+      <!-- Example Event Card -->
+      <div class="event-card">
+        <h3>Tech Expo 2025</h3>
+        <p><strong>Date:</strong> 12-Oct-2025</p>
+        <p>A grand exhibition of student tech projects showcasing innovation and creativity.</p>
+
+        <form action="/Register" method="post">
+          <input type="hidden" name="EventId" value="E123">
+
+          <input type="text" name="RegisterNumber" placeholder="College Register Number" required>
+          <input type="text" name="Name" placeholder="Full Name" required>
+          <input type="email" name="Email" placeholder="Email Address" required>
+          <input type="tel" name="Phone" placeholder="Phone Number" required>
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+
+      <!-- Repeat event cards dynamically if needed -->
+    </section>
+  </div>
+</body>
+</html>
