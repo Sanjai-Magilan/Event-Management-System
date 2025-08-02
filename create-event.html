@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create New Event</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Create a New Event</h1>
+    <form class="form-card" action="/CreateEvent" method="post" enctype="multipart/form-data">
+      <input type="text" name="EventName" placeholder="Event Title" required>
+      <textarea name="Description" placeholder="Event Description" rows="4" required></textarea>
+      <input type="date" name="Date" required>
+      <input type="file" name="PosterImage" accept="image/*" required>
+
+      <button type="submit">Create Event</button>
+    </form>
+  </div>
+</body>
+</html>

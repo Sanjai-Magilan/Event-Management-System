@@ -7,35 +7,17 @@
 </head>
 <body>
   <div class="dashboard">
-    <h1>Staff Dashboard</h1>
-
-    <section class="section">
-      <h2>Create New Event</h2>
-      <form action="/Event/Create" method="post">
-        <input type="text" name="Title" placeholder="Event Title" required>
-        <input type="date" name="Date" required>
-        <textarea name="Description" placeholder="Event Description" required></textarea>
-        <button type="submit">Create Event</button>
-      </form>
-    </section>
-
-    <section class="section">
-      <h2>Create Registration Form</h2>
-      <form action="/Form/Create" method="post">
-        <input type="text" name="EventId" placeholder="Event ID" required>
-        <input type="text" name="Field1" placeholder="Field Name 1" required>
-        <input type="text" name="Field2" placeholder="Field Name 2" required>
-        <button type="submit">Generate Form</button>
-      </form>
-    </section>
-
-    <section class="section">
-      <h2>View Participants</h2>
-      <form action="/Participants/View" method="get">
-        <input type="text" name="EventId" placeholder="Event ID" required>
-        <button type="submit">View List</button>
-      </form>
-    </section>
+    <h1>Welcome, Staff</h1>
+    <div class="card-container">
+      <a href="/CreateEvent" class="card">
+        <h2>+ Create New Event</h2>
+        <p>Host a new event with poster and registration</p>
+      </a>
+      <a href="/EventDetails" class="card">
+        <h2>📋 View Created Events</h2>
+        <p>See event details and registered participants</p>
+      </a>
+    </div>
   </div>
 </body>
 </html>

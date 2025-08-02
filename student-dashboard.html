@@ -14,23 +14,24 @@
 
       <!-- Example Event Card -->
       <div class="event-card">
+        <!-- Show Poster -->
+        <img src="/posters/tech-expo.jpg" alt="Event Poster" class="event-poster"/>
+
         <h3>Tech Expo 2025</h3>
         <p><strong>Date:</strong> 12-Oct-2025</p>
         <p>A grand exhibition of student tech projects showcasing innovation and creativity.</p>
 
         <form action="/Register" method="post">
           <input type="hidden" name="EventId" value="E123">
-
           <input type="text" name="RegisterNumber" placeholder="College Register Number" required>
           <input type="text" name="Name" placeholder="Full Name" required>
           <input type="email" name="Email" placeholder="Email Address" required>
           <input type="tel" name="Phone" placeholder="Phone Number" required>
-
           <button type="submit">Register</button>
         </form>
       </div>
 
-      <!-- Repeat event cards dynamically if needed -->
+      <!-- Repeat dynamically -->
     </section>
   </div>
 </body>
