@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Student Dashboard</title>
-  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="student-dashboard.css" />
 </head>
 <body>
-  <div class="dashboard">
-    <h1>Student Dashboard</h1>
+  <header>
+    <h1>Welcome, Student</h1>
+    <p>Explore upcoming events and register</p>
+     <a href="login.html" class="logout-btn">Logout</a>
+  </header>
 
-    <section class="section">
-      <h2>Available Events</h2>
-
-      <!-- Example Event Card -->
-      <div class="event-card">
-        <!-- Show Poster -->
-        <img src="/posters/tech-expo.jpg" alt="Event Poster" class="event-poster"/>
-
-        <h3>Tech Expo 2025</h3>
-        <p><strong>Date:</strong> 12-Oct-2025</p>
-        <p>A grand exhibition of student tech projects showcasing innovation and creativity.</p>
-
-        <form action="/Register" method="post">
-          <input type="hidden" name="EventId" value="E123">
-          <input type="text" name="RegisterNumber" placeholder="College Register Number" required>
-          <input type="text" name="Name" placeholder="Full Name" required>
-          <input type="email" name="Email" placeholder="Email Address" required>
-          <input type="tel" name="Phone" placeholder="Phone Number" required>
-          <button type="submit">Register</button>
-        </form>
+  <main class="event-container">
+    <!-- Example Event Card -->
+    <div class="event-card">
+      <img src="poster1.jpg" alt="Event Poster" />
+      <div class="event-info">
+        <h2>Tech Symposium 2025</h2>
+        <p>Date: 10 August 2025</p>
+        <p>Venue: Seminar Hall</p>
+        <button>Register</button>
       </div>
+    </div>
 
-      <!-- Repeat dynamically -->
-    </section>
-  </div>
+    <div class="event-card">
+      <img src="poster2.jpg" alt="Event Poster" />
+      <div class="event-info">
+        <h2>Workshop: AI in IoT</h2>
+        <p>Date: 18 August 2025</p>
+        <p>Venue: Lab 3</p>
+        <button>Register</button>
+      </div>
+    </div>
+
+    <!-- Add more event cards dynamically using Razor or JS -->
+  </main>
 </body>
 </html>

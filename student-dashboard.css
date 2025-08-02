@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f3f0fa;
+  color: #333;
+}
+
+header {
+  background-color: rgb(171, 126, 203);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: #e0cfff;
+}
+
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 15px;
+}
+
+.event-info h2 {
+  color: rgb(152, 81, 203);
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.event-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.event-info button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(152, 81, 203);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.event-info button:hover {
+  background-color: #5a0294;
+}
+
+.logout-btn {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  float: right;
+  margin-top: -40px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #4a148c;
+}

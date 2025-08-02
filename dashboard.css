@@ -72,3 +72,40 @@ button {
 button:hover {
   background: #1d1f2f;
 }
+.logout-btn {
+  background-color: #a0a1d6;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  float: right;
+  margin-top: -40px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #7064cd;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7d87cf;
+  color: white;
+  padding: 16px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn {
+  background-color: white;
+  color: #341b9a;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #584397;
+}
