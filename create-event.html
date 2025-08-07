@@ -11,6 +11,7 @@
     <form class="form-card" action="/CreateEvent" method="post" enctype="multipart/form-data">
       <input type="text" name="EventName" placeholder="Event Title" required>
       <textarea name="Description" placeholder="Event Description" rows="4" required></textarea>
+      <input type="text" name="Venue" placeholder="Event Venue" required> <!-- Venue field added -->
       <input type="date" name="Date" required>
       <input type="file" name="PosterImage" accept="image/*" required> 
       <button type="submit">Create Event</button>

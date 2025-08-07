@@ -10,7 +10,7 @@
   <header>
     <h1>Welcome, Student</h1>
     <p>Explore upcoming events and register</p>
-     <a href="login.html" class="logout-btn">Logout</a>
+    <a href="login.html" class="logout-btn">Logout</a>
   </header>
 
   <main class="event-container">
@@ -34,66 +34,78 @@
         <button>Register</button>
       </div>
     </div>
-
-    <!-- Add more event cards dynamically using Razor or JS -->
   </main>
+
   <!-- Registration Modal -->
-<div id="registrationModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h2>Event Registration</h2>
-    <form id="registrationForm">
-      <label for="studentName">Name</label>
-      <input type="text" id="studentName" name="studentName" required>
+  <div id="registrationModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Event Registration</h2>
+      <form id="registrationForm">
+        <label for="studentName">Name</label>
+        <input type="text" id="studentName" name="studentName" required>
 
-      <label for="registerNumber">Register Number</label>
-      <input type="text" id="registerNumber" name="registerNumber" required>
+        <label for="registerNumber">Register Number</label>
+        <input type="text" id="registerNumber" name="registerNumber" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+          <option value="" disabled selected>Select Department</option>
+          <option value="ECE">ECE</option>
+          <option value="CSE">CSE</option>          
+          <option value="EEE">EEE</option>
+          <option value="MECH">MECH</option>
+          <option value="CIVIL">CIVIL</option>
+          <option value="IT">IT</option>
+          <option value="CSBS">CSBS</option>
+        </select>
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-      <button type="submit">Submit</button>
-    </form>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </div>
-</div>
-<script>
-  const modal = document.getElementById("registrationModal");
-  const closeBtn = document.querySelector(".close-btn");
-  const registerButtons = document.querySelectorAll(".event-card button");
 
-  registerButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      modal.style.display = "block";
+  <script>
+    const modal = document.getElementById("registrationModal");
+    const closeBtn = document.querySelector(".close-btn");
+    const registerButtons = document.querySelectorAll(".event-card button");
+
+    registerButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        modal.style.display = "block";
+      });
     });
-  });
 
-  closeBtn.onclick = () => {
-    modal.style.display = "none";
-  };
-
-  window.onclick = (event) => {
-    if (event.target == modal) {
+    closeBtn.onclick = () => {
       modal.style.display = "none";
-    }
-  };
+    };
 
-  document.getElementById("registrationForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    const name = document.getElementById("studentName").value;
-    const regNo = document.getElementById("registerNumber").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
+    window.onclick = (event) => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
 
-    console.log("Registered:", { name, regNo, email, phone });
+    document.getElementById("registrationForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("studentName").value;
+      const regNo = document.getElementById("registerNumber").value;
+      const department = document.getElementById("department").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
 
-    alert("Registration successful!");
-    modal.style.display = "none";
-    this.reset();
-  });
-</script>
+      console.log("Registered:", { name, regNo, department, email, phone });
 
+      alert("Registration successful!");
+      modal.style.display = "none";
+      this.reset();
+    });
+  </script>
 </body>
 </html>
