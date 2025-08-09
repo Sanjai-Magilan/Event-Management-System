@@ -1,5 +1,7 @@
 body {
-  background: linear-gradient(to right, #4e54c8, #8f94fb);
+   background: linear-gradient(-45deg, #7d87cf, #6866d6, #7b4cb8, #85f8e5, #7d87cf, #7b4cb8);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
   font-family: Arial, sans-serif;
   display: flex;
   align-items: center;
@@ -7,6 +9,7 @@ body {
   height: 100vh;
   margin: 0;
 }
+
 
 .form-wrapper {
   background: #fff;
@@ -42,6 +45,7 @@ input {
 button {
   padding: 0.75rem;
   background-color: #4e54c8;
+ 
   color: #fff;
   border: none;
   border-radius: 6px;

@@ -1,24 +1,24 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f4f7f9;
-  color: #333;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #dfe8f0;
+  color: #f5eeee;
 }
 
 .dashboard {
   max-width: 800px;
   margin: 50px auto;
   padding: 2rem;
-  background: #fff;
+  background: #eeeffd;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
-}
+ }
 
 h1 {
   text-align: center;
   margin-bottom: 2rem;
   color: #2b2d42;
-}
+  font-family: 'Courier New', Courier, monospace;}
 
 .card-container {
   display: flex;
@@ -34,6 +34,7 @@ h1 {
   padding: 1.5rem;
   text-align: center;
   text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
   color: #2b2d42;
   transition: transform 0.2s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
@@ -52,7 +53,10 @@ h1 {
 
 input, textarea {
   padding: 0.8rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  background: #e7f3ff;
+  color: #736f6f;
+  font-family: initial;
   border: 1px solid #ccc;
   border-radius: 6px;
   width: 100%;
@@ -64,16 +68,17 @@ button {
   border: none;
   padding: 0.8rem;
   font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  border-color: #222337;
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 button:hover {
-  background: #1d1f2f;
+  background: #31344d;
 }
 .logout-btn {
-  background-color: #a0a1d6;
   color: white;
   padding: 8px 16px;
   text-decoration: none;
@@ -84,20 +89,34 @@ button:hover {
 }
 
 .logout-btn:hover {
-  background-color: #7064cd;
+  background-color: #e4e4f6;
 }
 .dashboard-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #7d87cf;
+  background-color: #eadff9;
   color: white;
+  background: linear-gradient(-45deg, #7d87cf, #6866d6, #7b4cb8, #85f8e5, #7d87cf);
+    background-size: 350% 300%;
+    animation: gradientBG 17s ease infinite;
   padding: 16px 24px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba( 0 , 0, 0, 0.2);
+}
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .logout-btn {
-  background-color: white;
+  background-color: rgb(219, 235, 238);
   color: #341b9a;
   padding: 8px 16px;
   text-decoration: none;
@@ -107,5 +126,5 @@ button:hover {
 }
 
 .logout-btn:hover {
-  background-color: #584397;
+  background-color: #ece9f4;
 }
