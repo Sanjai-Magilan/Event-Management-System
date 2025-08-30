@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
-  background-color: #dfe8f0;
+  background-color: #e1dff0;
   color: #f5eeee;
 }
 
@@ -52,12 +52,13 @@ h1 {
 }
 
 input, textarea {
-  padding: 0.8rem;
+  padding: 0.85rem;
   font-size: 1.1rem;
-  background: #e7f3ff;
+  background: #dedbf8;
   color: #736f6f;
   font-family: initial;
-  border: 1px solid #ccc;
+  border: 1px solid #bdaefd;
+  box-shadow: inset 1.5 1px 3px rgba(34, 13, 54, 0.1);
   border-radius: 6px;
   width: 100%;
 }
