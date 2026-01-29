@@ -100,7 +100,7 @@ button:hover {
   color: white;
   background: linear-gradient(-45deg, #7d87cf, #6866d6, #7b4cb8, #85f8e5, #7d87cf);
     background-size: 350% 300%;
-    animation: gradientBG 17s ease infinite;
+    animation: gradientBG 13s ease infinite;
   padding: 16px 24px;
   box-shadow: 0 2px 6px rgba( 0 , 0, 0, 0.2);
 }
